@@ -20,7 +20,7 @@ class Character:
     def take_damage(self, damage):
         self.hp -= abs(damage)
         if damage < 0:
-            raise Exception('Не хватает топлива!')
+            raise Exception('Неизвестная ошибка!')
 
     def attack(self, target):
         target.take_damage(self.damage)
